@@ -2,12 +2,14 @@
 font-family: 'Bitter', serif;*/
 
 #contenidos{
-	
+	border: 5px;
+	border-color: white;
 	width: 1000px;
 	height: auto;
 	margin: auto;
 	position: relative;
-	background: rgb(242,184,13);	
+	background: rgb(255,255,255);	
+
 }
 
 /*ETIQUETAS*/
@@ -21,7 +23,7 @@ background-size: cover;
 h1{
 font-family: 'Titillium Web', sans-serif;
 margin left: 10px;
-font-size: 20x;
+font-size: 10x;
 text-align: center;
 }
 
@@ -44,21 +46,30 @@ text-align: center;
 
 header{
 width: 1000px;
-height: 120px;
-background: rgb(179,179,179, 0,5);
+height: 100px;
+background: rgb(255,255,255);
+border-radius: 10px;
 }
 
 
 nav{
+margin-top: 20px;
 width: 1000px;
 height: 50px;
-background: rgb(51,51,51);
-border-radius: 0px;
+background: rgb(242,184,13);
 }
 
 ul{
 margin: auto;
+float: left;
 padding-top: 4px;
+}
+
+ul#right:{
+background: rgb(100,0,0);
+margin: auto;
+float: left;
+padding-top: 0px;
 }
 
 
@@ -66,10 +77,15 @@ li{
 float: left;
 list-style: none;
 padding: 10px;
-background: rgb(0,0,0);
+background: rgb(100,0,0);
 margin: 3px;
 border-radius: 10px;
-box-shadow: 0 0 10px white inset;
+}
+
+main{
+width: auto;
+height: auto;
+background: white;
 }
 
 
@@ -78,25 +94,46 @@ section{
 	background: white;
 	height: :600px;
 	float: left;
+	margin-top:10px;
+	border-radius: 20
+	}
+
+section#logo{
+	width: 500px;
+	height: 100px;
+	}
+
+section#objeto{
+	width: 500px;
+	height: 100px;
+	float: center;
+	}
+
+section#banner{
+	width: 1000px;
+	height: 250px;
+	float: left;
+
+
 }
 
 aside{
 	width: 280px;
-	background: black;
-	height: 600px;
+	height: auto;
+	background: rgb(242,184,13);
 	float: left;
 	margin-left: 20px;
-	margin-top: 20px;
+	margin-top: 10px;
 	border-radius: 10px;
 }
 
 
 footer{
 width: 1000px;
-background: red;
+background: rgb(0,102,128);
 height: 30px;
 float: left;
-margin-top: 20px;
+margin-top: 10px;
 margin-bottom: 20px
 }
 
@@ -116,13 +153,10 @@ text-align: justify;
 .ancho_menu_home{width: 900px;}
 .ancho_menu_paginas{width: 970px;}
 
-.menu:link{color: white; text-decoration: none;}
-.menu:visite{color: white; text-decoration: none;}
-.menu:hover{color: white; text-decoration: none;}
-.menu:active{color: white; text-decoration: none;}
+.menu:link{color:white; text-decoration: none;}
+.menu:visite{color:red; text-decoration: none;}
+.menu:hover{color:yellow; text-decoration: none;}
+.menu:active{color:green; text-decoration: none;}
+
 
 /*PSEUDO CLASES*/
-li:hover{
-	background: black;
-box-shadow: 0 0 10px white inset; }
-}
